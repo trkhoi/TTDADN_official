@@ -1,0 +1,136 @@
+﻿<Window x:Class="TTDADN.Feature1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TTDADN"
+        mc:Ignorable="d"
+        
+        xmlns:uc="clr-namespace:TTDADN.UserControlBar"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        TextElement.Foreground="{DynamicResource MaterialDesignBody}"
+     TextElement.FontWeight="Regular"
+     TextElement.FontSize="13"
+     TextOptions.TextFormattingMode="Ideal"
+     TextOptions.TextRenderingMode="Auto"
+     Background="{DynamicResource MaterialDesignPaper}"
+     FontFamily="{DynamicResource MaterialDesignFont}"
+        ResizeMode="NoResize"
+        WindowStyle="None"
+        
+        Title="Feature1" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid Grid.Row="0">
+            <uc:ControlBar></uc:ControlBar>
+        </Grid>
+        <Grid Grid.Row="1" VerticalAlignment="Center" HorizontalAlignment="Center">
+            <TextBlock
+                Style="{StaticResource MaterialDesignHeadline3TextBlock}">
+                Classroom's Information
+            </TextBlock>
+        </Grid>
+        <Grid Grid.Row="2">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Grid Grid.Column="0">
+                    <TextBlock FontSize="30" Text="Temperature:" VerticalAlignment="Center"></TextBlock>
+                </Grid>
+                <Grid Grid.Column="1">
+                    <TextBox
+                        Width="250"
+                        materialDesign:HintAssist.Hint="Temp's Value"
+                        Style="{StaticResource MaterialDesignFloatingHintTextBox}"
+                        VerticalAlignment="Center" 
+                        HorizontalAlignment="Center"/>
+                </Grid>
+                <Grid Grid.Column="2">
+                    <Button
+                        Width="100"
+                        Style="{StaticResource MaterialDesignFlatDarkBgButton}"
+                        ToolTip="MaterialDesignFlatDarkButton">
+                        Show
+                    </Button>
+                </Grid>
+                <!--<TextBlock FontSize="30" Text="Temperature:" VerticalAlignment="Center"></TextBlock>
+                <TextBox
+                    Width="300"
+                    materialDesign:HintAssist.Hint="Temp's Value"
+                    Style="{StaticResource MaterialDesignFloatingHintTextBox}"
+                    VerticalAlignment="Center" 
+                    HorizontalAlignment="Center"/>
+                <Button
+                    Style="{StaticResource MaterialDesignFlatDarkBgButton}"
+                    ToolTip="MaterialDesignFlatDarkButton">
+                    Show
+                </Button>-->
+            </Grid>
+        </Grid>
+        <Grid Grid.Row="3">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Grid Grid.Column="0">
+                    <TextBlock  FontSize="30" Text="Humidity:" VerticalAlignment="Center"></TextBlock>
+                </Grid>
+                <Grid Grid.Column="1">
+                    <TextBox
+                        Width="250"
+                        materialDesign:HintAssist.Hint="Humid's Value"
+                        Style="{StaticResource MaterialDesignFloatingHintTextBox}"
+                        VerticalAlignment="Center" 
+                        HorizontalAlignment="Center"/>
+                </Grid>
+                <Grid Grid.Column="2">
+                    <Button
+                        Width="100"
+                        Style="{StaticResource MaterialDesignFlatDarkBgButton}"
+                        ToolTip="MaterialDesignFlatDarkButton">
+                        Show
+                    </Button>
+                </Grid>
+            </Grid>
+        </Grid>
+        <Grid Grid.Row="4">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Grid Grid.Column="0">
+                    <TextBlock  FontSize="30" Text="Light intensty:" VerticalAlignment="Center"></TextBlock>
+                </Grid>
+                <Grid Grid.Column="1">
+                    <TextBox
+                        Width="250"
+                        materialDesign:HintAssist.Hint="Light's Value"
+                        Style="{StaticResource MaterialDesignFloatingHintTextBox}"
+                        VerticalAlignment="Center" 
+                        HorizontalAlignment="Center"/>
+                </Grid>
+                <Grid Grid.Column="2">
+                    <Button
+                        Width="100"
+                        Style="{StaticResource MaterialDesignFlatDarkBgButton}"
+                        ToolTip="MaterialDesignFlatDarkButton">
+                        Show
+                    </Button>
+                </Grid>
+            </Grid>
+        </Grid>
+    </Grid>
+</Window>
