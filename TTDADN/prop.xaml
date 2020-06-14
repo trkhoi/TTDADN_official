@@ -23,10 +23,9 @@
         <Grid.RowDefinitions>
             <RowDefinition Height="auto"></RowDefinition>
             <RowDefinition Height="90"></RowDefinition>
-            <RowDefinition Height="80"></RowDefinition>
-            <RowDefinition Height="80"></RowDefinition>
-            <RowDefinition Height="80"></RowDefinition>
-            <RowDefinition Height="80"></RowDefinition>
+            <RowDefinition Height="100"></RowDefinition>
+            <RowDefinition Height="100"></RowDefinition>
+
             <RowDefinition></RowDefinition>
         </Grid.RowDefinitions>
         <Grid Grid.Row="0">
@@ -43,7 +42,7 @@
         </Grid>
         <Grid Grid.Row="2">
             <TextBlock 
-                Text="Time: "
+                Text="Time Start: "
                 Margin="20 0 0 0"
                 VerticalAlignment="Center"
                 HorizontalAlignment="Left"
@@ -59,7 +58,7 @@
         </Grid>
         <Grid Grid.Row="3">
             <TextBlock 
-                Text="Interval: "
+                Text="Time End: "
                 Margin="20 0 0 0"
                 VerticalAlignment="Center"
                 HorizontalAlignment="Left"
@@ -74,22 +73,6 @@
                 HorizontalAlignment="Left"/>
         </Grid>
         <Grid Grid.Row="4">
-            <TextBlock 
-                Text="Intensity: "
-                Margin="20 0 0 0"
-                VerticalAlignment="Center"
-                HorizontalAlignment="Left"
-                FontSize="30">
-            </TextBlock>
-            <TextBox
-                materialDesign:HintAssist.Hint="Floating Hint"
-                Width="100"
-                Margin="150 0 10 0"
-                Style="{StaticResource MaterialDesignFloatingHintTextBox}"
-                VerticalAlignment="Center"
-                HorizontalAlignment="Left"/>
-        </Grid>
-        <Grid Grid.Row="5">
             <Button
                 Width="100"
                 Style="{StaticResource MaterialDesignFlatDarkBgButton}"

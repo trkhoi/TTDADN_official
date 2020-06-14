@@ -52,13 +52,10 @@
                     materialDesign:HintAssist.HintOpacity=".26"
                     IsEditable="True">
                     <ComboBoxItem>
-                        Temperature Sensor
+                        Light 
                     </ComboBoxItem>
                     <ComboBoxItem>
-                        Humidity Sensor
-                    </ComboBoxItem>
-                    <ComboBoxItem>
-                        Light Sensor
+                        Speaker
                     </ComboBoxItem>
                 </ComboBox>
             </Grid>
