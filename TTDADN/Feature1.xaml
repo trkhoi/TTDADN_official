@@ -52,15 +52,10 @@
                         materialDesign:HintAssist.Hint="Temp's Value"
                         Style="{StaticResource MaterialDesignFloatingHintTextBox}"
                         VerticalAlignment="Center" 
-                        HorizontalAlignment="Center"/>
+                        HorizontalAlignment="Center"
+                        Text="{Binding Param.Temperature}"/>
                 </Grid>
                 <Grid Grid.Column="2">
-                    <Button
-                        Width="100"
-                        Style="{StaticResource MaterialDesignFlatDarkBgButton}"
-                        ToolTip="MaterialDesignFlatDarkButton">
-                        Show
-                    </Button>
                 </Grid>
                 <!--<TextBlock FontSize="30" Text="Temperature:" VerticalAlignment="Center"></TextBlock>
                 <TextBox
@@ -89,6 +84,7 @@
                 <Grid Grid.Column="1">
                     <TextBox
                         Width="250"
+                        Text="{Binding Param.Humidity}"
                         materialDesign:HintAssist.Hint="Humid's Value"
                         Style="{StaticResource MaterialDesignFloatingHintTextBox}"
                         VerticalAlignment="Center" 
@@ -96,6 +92,7 @@
                 </Grid>
                 <Grid Grid.Column="2">
                     <Button
+                        Click="Button_Click"
                         Width="100"
                         Style="{StaticResource MaterialDesignFlatDarkBgButton}"
                         ToolTip="MaterialDesignFlatDarkButton">
@@ -116,6 +113,7 @@
                 </Grid>
                 <Grid Grid.Column="1">
                     <TextBox
+                        Text="{Binding Param.Light}"
                         Width="250"
                         materialDesign:HintAssist.Hint="Light's Value"
                         Style="{StaticResource MaterialDesignFloatingHintTextBox}"
@@ -123,12 +121,6 @@
                         HorizontalAlignment="Center"/>
                 </Grid>
                 <Grid Grid.Column="2">
-                    <Button
-                        Width="100"
-                        Style="{StaticResource MaterialDesignFlatDarkBgButton}"
-                        ToolTip="MaterialDesignFlatDarkButton">
-                        Show
-                    </Button>
                 </Grid>
             </Grid>
         </Grid>
