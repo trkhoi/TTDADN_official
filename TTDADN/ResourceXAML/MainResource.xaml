@@ -2,6 +2,6 @@
                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
                     xmlns:viewmodel="clr-namespace:TTDADN.ViewModel">
     <viewmodel:MainViewModel x:Key="MainVM"></viewmodel:MainViewModel>
-    <viewmodel:Feature4ViewModel x:Key="Feature4VM"></viewmodel:Feature4ViewModel>
+    
     <viewmodel:Feature5ViewModel x:Key="Feature5VM"></viewmodel:Feature5ViewModel>
 </ResourceDictionary>

@@ -81,9 +81,6 @@
     <Compile Include="LoginWindow.xaml.cs">
       <DependentUpon>LoginWindow.xaml</DependentUpon>
     </Compile>
-    <Compile Include="prop.xaml.cs">
-      <DependentUpon>prop.xaml</DependentUpon>
-    </Compile>
     <Compile Include="propStat.xaml.cs">
       <DependentUpon>propStat.xaml</DependentUpon>
     </Compile>
@@ -131,10 +128,6 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Page Include="prop.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
     <Page Include="propStat.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>

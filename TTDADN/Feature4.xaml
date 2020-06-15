@@ -17,13 +17,14 @@
      FontFamily="{DynamicResource MaterialDesignFont}"
         ResizeMode="NoResize"
         WindowStyle="None"
-        DataContext="{StaticResource Feature4VM}"
+        
         Title="Feature4" Height="450" Width="800">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="auto"></RowDefinition>
             <RowDefinition Height="100"></RowDefinition>
             <RowDefinition Height="80"></RowDefinition>
+            <RowDefinition Height="150"></RowDefinition>
             <RowDefinition></RowDefinition>
         </Grid.RowDefinitions>
         <Grid Grid.Row="0">
@@ -44,7 +45,7 @@
                 <ColumnDefinition></ColumnDefinition>
             </Grid.ColumnDefinitions>
             <Grid Grid.Column="0" Width="200">
-                <TextBlock Text="Choose device:" FontSize="25" Margin="0 25 0 0"></TextBlock>
+                <TextBlock x:Name="device" Text="Choose device:" FontSize="25" Margin="0 25 0 0"></TextBlock>
             </Grid>
             <Grid Grid.Column="1">
                 <ComboBox Height="50"
@@ -52,40 +53,60 @@
                     materialDesign:HintAssist.HintOpacity=".26"
                     IsEditable="True">
                     <ComboBoxItem>
-                        Light 
+                        Light
                     </ComboBoxItem>
                     <ComboBoxItem>
                         Speaker
                     </ComboBoxItem>
                 </ComboBox>
             </Grid>
-            <Grid Grid.Column="2">
-                <Button
-                    Width="100"
-                    Style="{StaticResource MaterialDesignFlatDarkBgButton}"
-                    ToolTip="MaterialDesignFlatDarkButton">
-                    Choose
-                </Button>
-            </Grid>
         </Grid>
         <Grid Grid.Row="3">
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition></ColumnDefinition>
-                <ColumnDefinition></ColumnDefinition>
-            </Grid.ColumnDefinitions>
-            <Grid Grid.Column="0">
-                <Button Command="{Binding prop}"
-                    Width="200"
-                    Style="{StaticResource MaterialDesignFlatDarkBgButton}"
-                    ToolTip="MaterialDesignFlatDarkButton">
-                    Properties
-                </Button>
+            <Grid.RowDefinitions>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+            </Grid.RowDefinitions>
+            <Grid Grid.Row="0">
+                <TextBlock 
+                Text="Time Start: "
+                Margin="35 0 0 0"
+                VerticalAlignment="Center"
+                HorizontalAlignment="Left"
+                FontSize="25">
+                </TextBlock>
+                <TextBox
+                x:Name="timeStart"
+                materialDesign:HintAssist.Hint="Time"
+                Width="100"
+                Margin="266 0 10 0"
+                Style="{StaticResource MaterialDesignFloatingHintTextBox}"
+                VerticalAlignment="Center"
+                HorizontalAlignment="Left"/>
             </Grid>
+            <Grid Grid.Row="1">
+                <TextBlock 
+                Text="Time End: "
+                Margin="35 0 0 0"
+                VerticalAlignment="Center"
+                HorizontalAlignment="Left"
+                FontSize="25">
+                </TextBlock>
+                <TextBox
+                x:Name="timeEnd"
+                materialDesign:HintAssist.Hint="Time"
+                Width="100"
+                Margin="266 0 10 0"
+                Style="{StaticResource MaterialDesignFloatingHintTextBox}"
+                VerticalAlignment="Center"
+                HorizontalAlignment="Left"/>
+            </Grid>
+        </Grid>
+        <Grid Grid.Row="4">
             <Grid Grid.Column="1">
                 <Button
                     Width="200"
                     Style="{StaticResource MaterialDesignFlatAccentBgButton}"
-                    ToolTip="MaterialDesignFlatAccentBackgroundButton">
+                    ToolTip="MaterialDesignFlatAccentBackgroundButton" Click="set_Click">
                     Set
                 </Button>
             </Grid>

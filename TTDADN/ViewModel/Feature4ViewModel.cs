@@ -10,10 +10,10 @@ namespace TTDADN.ViewModel
 {
     public class Feature4ViewModel : BaseViewModel
     {
-        public ICommand prop { get; set; }
+        /*public ICommand prop { get; set; }
         public Feature4ViewModel()
         {
             prop = new RelayCommand<object>((p) => { return true; }, (p) => { prop wd = new prop(); wd.ShowDialog(); });
-        }
+        }*/
     }
 }
