@@ -71,6 +71,36 @@ namespace TTDADN
         {
             InitializeComponent();
             this.DataContext = this;
+            CreateFileWatcher("D:\\Projects\\C#\\TTDADN_official\\TTDADN\\bin\\Debug\\");
+        }
+
+        public void CreateFileWatcher(string path)
+        {
+            FileSystemWatcher watcher = new FileSystemWatcher();
+            watcher.Path = path;
+
+            watcher.NotifyFilter = NotifyFilters.LastAccess | NotifyFilters.LastWrite | NotifyFilters.FileName |
+                NotifyFilters.DirectoryName;
+            watcher.Filter = "*.json";
+
+            watcher.Changed += new FileSystemEventHandler(OnChanged);
+            watcher.Created += new FileSystemEventHandler(OnChanged);
+            watcher.Deleted += new FileSystemEventHandler(OnChanged);
+            watcher.Renamed += new RenamedEventHandler(OnRenamed);
+
+            watcher.EnableRaisingEvents = true;
+        }
+
+        private void OnChanged(object source, FileSystemEventArgs e)
+        {
+            System.Threading.Thread.Sleep(1000);
+            var jsonString = File.ReadAllText("D:\\Projects\\C#\\TTDADN_official\\TTDADN\\bin\\Debug\\demo.json");
+            Param = JsonConvert.DeserializeObject<Parameter>(jsonString);
+        }
+
+        private static void OnRenamed(object source, RenamedEventArgs e)
+        {
+
         }
 
         public event PropertyChangedEventHandler PropertyChanged;
