@@ -23,7 +23,7 @@ namespace TTDADN
     {
         static public string disk = "D:";
         static public string path = "D:\\Material Design\\python_scripts";
-        static public string script = "python main.py";
+        static public string script = "python main_2.py";
         public static void run_cmd_subscriber()
         {
             Process process = new Process();
@@ -43,7 +43,6 @@ namespace TTDADN
             process.StandardInput.Flush();
             process.StandardInput.Close();
             //process.WaitForExit();
-            
         }
         public MainWindow()
         {

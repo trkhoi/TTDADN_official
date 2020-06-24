@@ -139,7 +139,6 @@ D:\Material Design\TTDADN_official\TTDADN\obj\Debug\Feature4.g.cs
 D:\Material Design\TTDADN_official\TTDADN\obj\Debug\Feature5.g.cs
 D:\Material Design\TTDADN_official\TTDADN\obj\Debug\LoginWindow.g.cs
 D:\Material Design\TTDADN_official\TTDADN\obj\Debug\MainWindow.g.cs
-D:\Material Design\TTDADN_official\TTDADN\obj\Debug\prop.g.cs
 D:\Material Design\TTDADN_official\TTDADN\obj\Debug\propStat.g.cs
 D:\Material Design\TTDADN_official\TTDADN\obj\Debug\UserControlBar\ControlBar.g.cs
 D:\Material Design\TTDADN_official\TTDADN\obj\Debug\App.g.cs
@@ -154,7 +153,6 @@ D:\Material Design\TTDADN_official\TTDADN\obj\Debug\Feature4.baml
 D:\Material Design\TTDADN_official\TTDADN\obj\Debug\Feature5.baml
 D:\Material Design\TTDADN_official\TTDADN\obj\Debug\LoginWindow.baml
 D:\Material Design\TTDADN_official\TTDADN\obj\Debug\MainWindow.baml
-D:\Material Design\TTDADN_official\TTDADN\obj\Debug\prop.baml
 D:\Material Design\TTDADN_official\TTDADN\obj\Debug\propStat.baml
 D:\Material Design\TTDADN_official\TTDADN\obj\Debug\ResourceXAML\MainResource.baml
 D:\Material Design\TTDADN_official\TTDADN\obj\Debug\UserControlBar\ControlBar.baml
@@ -247,3 +245,7 @@ D:\Projects\TTDADN_official\TTDADN\obj\Debug\TTDADN.Properties.Resources.resourc
 D:\Projects\TTDADN_official\TTDADN\obj\Debug\TTDADN.csproj.GenerateResource.cache
 D:\Projects\TTDADN_official\TTDADN\obj\Debug\TTDADN.csproj.CoreCompileInputs.cache
 D:\Projects\TTDADN_official\TTDADN\obj\Debug\TTDADN.csproj.CopyComplete
+D:\Material Design\TTDADN_official\TTDADN\bin\Debug\Newtonsoft.Json.dll
+D:\Material Design\TTDADN_official\TTDADN\bin\Debug\Newtonsoft.Json.xml
+D:\Material Design\TTDADN_official\TTDADN\obj\Debug\ImageWindow.g.cs
+D:\Material Design\TTDADN_official\TTDADN\obj\Debug\ImageWindow.baml

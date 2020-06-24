@@ -4,7 +4,7 @@ import argparse
 # Parser
 parser = argparse.ArgumentParser(description='Publisher')
 parser.add_argument("--name", help="Name of client", default="Loliology_pub")
-parser.add_argument("--broker", help="Broker address", default="13.76.87.87")
+parser.add_argument("--broker", help="Broker address", default="52.163.84.252")
 parser.add_argument("--port", help="Port", default=1883)
 parser.add_argument("--topic", help="Topic to publish", default="Topic/LightD")
 parser.add_argument("--on", help="Light ON/OFF [Required]", required=True)
